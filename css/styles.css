@@ -182,8 +182,10 @@ body {
 }
 
 .gallery-type {
+    color: var(--main-text-color);
     font-size: 16px;
     line-height: 1.9;
+    text-decoration: none;
 }
 
 /* Футер */
