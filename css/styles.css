@@ -5,6 +5,7 @@
 
     --header-text-color: #212121;
     --main-text-color: #757575;
+    --hero-text-color: #fff;
 
     --accent-color: #2196f3;
 }
@@ -19,6 +20,7 @@ body {
     letter-spacing: 0.03em;
 }
 
+/* Заглушки */
 .list {
     list-style: none;
 }
@@ -27,8 +29,9 @@ body {
     text-decoration: none;
 }
 
+/* Ссылки */
 .logo-link {
-    color: #000;
+    color: var(--accent-color);
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -43,10 +46,6 @@ body {
     color: #fff;
 }
 
-.logo-accent {
-    color: var(--accent-color);
-}
-
 .nav-link {
     color: var(--header-text-color);
     font-weight: 500;
@@ -57,19 +56,14 @@ body {
 .contact-link {
     color: var(--main-text-color);
     font-weight: 500;
-
-    /* Необходимо для снятия italic от тега address */
-    font-style: normal;
-    
+    font-style: normal;/* Необходимо для снятия italic от тега address */
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
 
 .geo-link {
     color: #fff;
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-style: normal;
+    font-style: normal; /* Необходимо для снятия italic от тега address */
 }
 
 .nav-link:hover,
@@ -81,6 +75,78 @@ body {
     color: var(--accent-color);
 }
 
+/* Герой */
+.hero {
+    background-color: var(--hero-footer-backround-color);
+}
+
+.hero-title {
+    color: var(--hero-text-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.hero-button {
+    color: var(--hero-text-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+/* Особенности */
+.hiden-header {
+    /* Убрать видимость семантического заголовка */
+}
+
+.features-header {
+    color: var(--header-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+/* Общий хедер */
+.header {
+    color: var(--header-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+/* Команда */
+.team {
+    background-color: var(--secondary-backround-color);
+}
+
+.team-card {
+    background-color: #fff;
+}
+
+.team-name {
+    color: var(--header-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.team-position {
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+/* Футер */
 .footer {
     background-color: var(--hero-footer-backround-color);
 }
