@@ -16,7 +16,6 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.7;
     letter-spacing: 0.03em;
 }
 
@@ -35,7 +34,7 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.2;
+    line-height: 1.19;
 }
 
 .header-link {
@@ -53,7 +52,7 @@ body {
     letter-spacing: 0.02em;
 }
 
-.contact-link {
+.contact-header-link {
     color: var(--main-text-color);
     font-weight: 500;
     font-style: normal;/* Необходимо для снятия italic от тега address */
@@ -61,15 +60,24 @@ body {
     letter-spacing: 0.02em;
 }
 
+.contact-footer-link {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;/* Необходимо для снятия italic от тега address */
+    line-height: 1.71;
+}
+
 .geo-link {
     color: #fff;
     font-style: normal; /* Необходимо для снятия italic от тега address */
+    line-height: 1.71;
 }
 
 .nav-link:hover,
 .nav-link:focus,
-.contact-link:hover,
-.contact-link:focus,
+.contact-header-link:hover,
+.contact-header-link:focus,
+.contact-footer-link:hover,
+.contact-footer-link:focus,
 .geo-link:hover,
 .geo-link:focus {
     color: var(--accent-color);
@@ -96,7 +104,7 @@ body {
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.9;
+    line-height: 1.87;
     display: flex;
     align-items: center;
     text-align: center;
@@ -123,12 +131,16 @@ body {
     text-transform: uppercase;
 }
 
+.features-text {
+    line-height: 1.71;
+}
+
 /* Общий хедер */
 .header {
     color: var(--header-text-color);
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.2;
+    line-height: 1.17;
     text-align: center;
 }
 
@@ -145,13 +157,13 @@ body {
     color: var(--header-text-color);
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.2;
+    line-height: 1.19;
     text-align: center;
 }
 
 .team-position {
     font-size: 16px;
-    line-height: 1.2;
+    line-height: 1.19;
     text-align: center;
 }
 
@@ -162,7 +174,7 @@ body {
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.63;
     text-align: center;
     cursor: pointer;
 }
@@ -184,7 +196,7 @@ body {
 .gallery-type {
     color: var(--main-text-color);
     font-size: 16px;
-    line-height: 1.9;
+    line-height: 1.88;
     text-decoration: none;
 }
 
